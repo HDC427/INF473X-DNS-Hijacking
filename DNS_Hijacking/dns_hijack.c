@@ -220,7 +220,7 @@ void process_packet(u_char *args, const struct pcap_pkthdr *header, const u_char
 	bzero(addit, ANS_SIZE*sizeof(res_record));
 
 	//the UDP header
-	struct udphdr *in_udphdr = (struct udpdr*)(in_iphr + 1);
+	struct udphdr *in_udphdr = (struct udphdr*)(in_iphr + 1);
 
 	//the DNS header
 	//	dns_header *dnsh = (dns_header*)(udph + 1);
